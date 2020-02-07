@@ -18,7 +18,6 @@ interface bookingData{
   styleUrls: ['./item-booking.component.scss']
 })
 export class ItemBookingComponent implements OnInit {
-  item:Item;
   itemId:number;
   inventory:Array<Item>;
   bookingForm: FormGroup;
@@ -31,7 +30,6 @@ export class ItemBookingComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.inventory = this.inventoryService.getInventory();
       this.itemId = parseInt(params.get('itemId'));
-      this.item = this.inventory[this.itemId];
     });
   }
 
