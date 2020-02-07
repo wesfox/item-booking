@@ -1,0 +1,7 @@
+<div class="item">
+    <h3>{{item.name}}</h3>
+    <p>{{item.description}}</p>
+    <div *ngIf="!booker; then availableItemTag else bookedItemTag"></div>
+    <ng-template #availableItemTag><span class="availableTag">Available</span></ng-template>
+    <ng-template #bookedItemTag><span class="bookedTag">Booked by {{booker}}</span></ng-template>
+</div>

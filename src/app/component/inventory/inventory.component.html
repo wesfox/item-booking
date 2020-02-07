@@ -1,0 +1,7 @@
+<div *ngFor="let item of items; index as itemId">
+    <app-item
+        [item]="item"
+        [routerLink]="['/inventory', itemId]">
+    </app-item>
+</div>
+<div><button>Add Item</button><button>Add User</button></div>

@@ -1,0 +1,12 @@
+<app-item [item]="inventory[itemId]"></app-item>
+<form 
+    [formGroup]="bookingForm"
+    (ngSubmit)="onSubmit(bookingForm.value)">
+    <div>
+      From <input id="startDate" type="date" formControlName="startDate"> 
+      to <input id="endDate" type="date" formControlName="endDate"> (included), 
+      by <input id="booker" type="text" formControlName="booker">
+    </div>
+  
+    <button class="button" type="submit">Book</button>
+</form>

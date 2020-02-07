@@ -1,0 +1,22 @@
+@import '../../base';
+
+.item {
+  box-shadow: 2px 2px 5px grey;
+  padding: 10px;
+  margin: 10px;
+}
+
+.item:hover{
+    background-color: $highlight-color;
+    cursor: pointer;
+}
+
+.availableTag{
+    background-color: $ok-color;
+    padding: 5px;
+}
+
+.bookedTag{
+    background-color: $ko-color;
+    padding: 5px;
+}
